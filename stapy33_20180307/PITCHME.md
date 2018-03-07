@@ -44,9 +44,8 @@ Masato Fujitake
 
 +++
 ### [Tutorial](http://pytorch.org/tutorials/)が強い
-
-![tutorial](stapy33_20180307/images/pytorch_tutorial.png)
 [Fine-Tune](http://pytorch.org/tutorials/beginner/transfer_learning_tutorial.html#sphx-glr-beginner-transfer-learning-tutorial-py)もチュートリアルである
+![tutorial](stapy33_20180307/images/pytorch_tutorial.png)
 
 +++
 ### コミュニティが凄い
