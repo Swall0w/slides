@@ -13,7 +13,7 @@
 <table border="0">
 <tr>
 <td>
-![Swall0w](assets/images/swall0w.png)
+![Swall0w](assets/images/swall0w.jpg)
 </td>
 </tr>
 </table>
