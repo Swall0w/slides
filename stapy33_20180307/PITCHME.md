@@ -54,7 +54,8 @@ Stack overflow風の質問サイトがある
 
 ---
 ## Pytorch使いやすいです
-## `conda install pytorch torchvision -c pytorch`
+ぜひ使ってみてください
+`conda install pytorch torchvision -c pytorch`
 
 ---
 ## EOF
