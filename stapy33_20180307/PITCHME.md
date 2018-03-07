@@ -18,7 +18,7 @@ Masato Fujitake
 ## 深層学習フレームワーク使ってMnistで手が止まる
 
 - Examplesがソースコードだけでは分かりづらい
-- 抽象化され過ぎててどう変えればいいか分からない
+- 抽象化され過ぎてて変え場所が分からない
 - そもそもどういうことが出来るか分からない
 
 ---
@@ -53,6 +53,9 @@ Masato Fujitake
 Stack overflow風の質問サイトがある
 ![discuss](stapy33_20180307/images/pytorch_discuss.png)
 
+---
+## Pytorch使いやすいです
+## `conda install pytorch torchvision -c pytorch`
 
 ---
 ## EOF
