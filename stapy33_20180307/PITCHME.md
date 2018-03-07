@@ -27,7 +27,7 @@ Masato Fujitake
 ---
 
 ## Pytorchとは
----?image=images/pytorch_home.png&size=auto 90%
+![pytorchhome](images/pytorch_home.png)
 
 ---
 ## EOF
