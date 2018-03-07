@@ -11,13 +11,14 @@ Masato Fujitake
 # 深層学習歴
 - 学校：物体検出
 - バイト：文字認識
-- 趣味：One-shot learning
-- フレームワークはcaffe->chainer->Pytorch
+- 趣味：One-shot learningなど
+- フレームワークはCaffe→Chainer→Pytorch
 
 ---
-## 深層学習フレームワーク使ってMnist以降何をすれば分からない
+## 深層学習フレームワーク使ってMnistで手が止まる
+
 - Examplesがソースコードだけでは分かりづらい
-- 抽象化され過ぎててどうデータを入れればいいのか分からない
+- 抽象化され過ぎててどう変えればいいか分からない
 - そもそもどういうことが出来るか分からない
 
 ---
@@ -28,3 +29,6 @@ Masato Fujitake
 ## Pytorchとは
 
 - [Pytorch](http://pytorch.org/)
+
+---
+## EOF
