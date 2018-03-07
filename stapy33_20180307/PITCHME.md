@@ -27,7 +27,21 @@ Masato Fujitake
 ---
 
 ## Pytorchとは
-![pytorchhome](images/pytorch_home.png)
+
+- Torch7 & Chainerを元に作られた
+- Define by Run
+- FacebookやUber, 有名大学が開発してる
+![pytorchhome](stapy33_20180307/images/pytorch_home.png)
+
+--- 
+## Pytorchのいい理由
+
+- Tutorialが強い
+- Pythonicなコードでそこそこ抽象化
+- 新しいネットワークのリポジトリがたくさん
+- Debugしやすい
+
+
 
 ---
 ## EOF
