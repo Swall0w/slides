@@ -8,11 +8,4 @@
 
 - 興味: 画像処理, 機械学習, Python, C++, アセンブリ
 
-<table border="0">
-<tr>
-<td>
 ![Swall0w](assets/images/swall0w.jpg)
-</td>
-</tr>
-</table>
-
