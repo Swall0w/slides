@@ -23,6 +23,7 @@ Masato Fujitake
 
 ---
 ## Pytorchで解決できます
+![pytorch](stapy33_20180307/images/pytorch-logo-flat.png)
 
 ---
 
@@ -30,6 +31,7 @@ Masato Fujitake
 
 - Torch7 & Chainerを元に作られた
 - Define by Run
+- Pythonicなコードでそこそこ抽象化
 - FacebookやUber, 有名大学が開発してる
 ![pytorchhome](stapy33_20180307/images/pytorch_home.png)
 
@@ -37,10 +39,19 @@ Masato Fujitake
 ## Pytorchのいい理由
 
 - Tutorialが強い
-- Pythonicなコードでそこそこ抽象化
 - 新しいネットワークのリポジトリがたくさん
-- Debugしやすい
+- コミニュティでの情報交換が凄い
 
++++
+### [Tutorial](http://pytorch.org/tutorials/)が強い
+
+![tutorial](stapy33_20180307/images/pytorch_tutorial.png)
+[Fine-Tune](http://pytorch.org/tutorials/beginner/transfer_learning_tutorial.html#sphx-glr-beginner-transfer-learning-tutorial-py)もチュートリアルである
+
++++
+### コミュニティが凄い
+Stack overflow風の質問サイトがある
+![discuss](stapy33_20180307/images/pytorch_discuss.png)
 
 
 ---
