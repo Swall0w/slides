@@ -1,4 +1,4 @@
-## お前誰よ
+## Who Am I
 
 - 藤武 将人/ Masato Fujitake
 
@@ -6,6 +6,6 @@
 
 - ロボット系専攻（M1)
 
-- 興味: 画像処理, 機械学習, Python, C++, アセンブリ
+- 興味: 画像処理, 機械学習, Python, C++,
 
----?image=assets/images/swall0w.jpg&size=auto 90%
+![Swall0w](assets/images/swall0w.jpg)
