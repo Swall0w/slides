@@ -1,6 +1,6 @@
 ## Python3で楽しむ小技集
 
-### Python3で出来る便利機能
+### 普段から使いたい便利機能
 
 2018 Jul 11
 Masato Fujitake
@@ -10,6 +10,7 @@ Masato Fujitake
 ---
 
 ## ![Moving to require Python 3](http://python3statement.org/)
+Python2のサポートがどんどん切られていく
 
 ---?image=stapy33_20180711/images/project.png&size=auto 80%
 
@@ -73,12 +74,12 @@ format構文がもっと楽に！
 
     # Python 2
     >>> print('{batch:3} accuracy: {acc_mean:0.4f}'.format(
-           batch=batch, acc_mean=numpy.mean(accuracies)))
+    ...    batch=batch, acc_mean=numpy.mean(accuracies)))
     100 accuracy: 0.8021
 
 
     >>> print('{:3} accuracy: {:0.4f}'.format(
-           batch, numpy.mean(accuracies)))
+    ...    batch, numpy.mean(accuracies)))
 
 
     # Python 3
@@ -143,10 +144,7 @@ CPython3.7+ではdictがOrderedDictのように振る舞う
     >>> first
     'Beautiful is better than ugly.'
     >>> last
-    'Namespaces are one honking great idea -- let's do more of those!'
-
-
-
+    "Namespaces are one honking great idea -- let's do more of those!"
 
 ---
 ## まとめ
@@ -156,7 +154,14 @@ CPython3.7+ではdictがOrderedDictのように振る舞う
 - dictの振る舞い
 - 色々使えるアンパック
 
+
 ぜひ使ってみてください
+
+---
+## References
+- [PEP 0 -- Index of Python Enhancement Proposals (PEPs)](https://www.python.org/dev/peps/)
+- [Python 3 for Scientists](http://python-3-for-scientists.readthedocs.io/en/latest/)
+- [10 awesome features of Python that you can't use because you refuse to upgrade to Python 3](https://www.asmeurer.com/python3-presentation/slides.html#1)
 
 ---
 ## EOF
