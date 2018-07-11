@@ -98,14 +98,40 @@ CPython3.7+ではdictがOrderedDictのように振る舞う
     >>> x
     {'0': 0, '1': 1, '2': 2, '3': 3, '4': 4}
 
-### [Tutorial](http://pytorch.org/tutorials/)が強い
-[Fine-Tune](http://pytorch.org/tutorials/beginner/transfer_learning_tutorial.html#sphx-glr-beginner-transfer-learning-tutorial-py)もチュートリアルである
-![tutorial](stapy33_20180307/images/pytorch_tutorial.png)
+## 拡張されたアンパッキング
+アンパッキングでこれが出来る
+
+    >>> a, b = range(2)
+    >>> a
+    0
+    >>> b
+    1
+
+    >>> a, b, *rest = range(10)
+    >>> a
+    0
+    >>> b
+    1
+    >>> rest
+    [2, 3, 4, 5, 6, 7, 8, 9]
 
 +++
-### コミュニティが凄い
-Stack overflow風の質問サイトがある
-![discuss](stapy33_20180307/images/pytorch_discuss.png)
+
+ちなみに*restはどこにでもおける
+
+    >>> a, *rest, b = range(10)
+    >>> a
+    0
+    >>> b
+    9
+    >>> rest
+    [1, 2, 3, 4, 5, 6, 7, 8]
+
+    >>> *rest, b = range(10)
+    >>> rest
+    [0, 1, 2, 3, 4, 5, 6, 7, 8]
+    >>> b
+9
 
 ---
 ## Pytorch使いやすいです
