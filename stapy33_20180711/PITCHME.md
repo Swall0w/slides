@@ -6,10 +6,10 @@
 Masato Fujitake
 
 ---?include=common/whoami_stapy.md
----
----?image=stapy33_20180711/images/project.png&size=auto 60%
 
-![Moving to require Python 3](http://python3statement.org/)
+## ![Moving to require Python 3](http://python3statement.org/)
+
+---?image=stapy33_20180711/images/project.png&size=auto 60%
 
 ---
 
