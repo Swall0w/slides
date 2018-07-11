@@ -1,20 +1,32 @@
 ## Python3へ移行しよう
 
-### Pytorchを使ってみよう
+### Python3で出来る便利機能
 
 2018 Jul 11
 Masato Fujitake
 
 ---?include=common/whoami_stapy.md
 ---
+---?image=stapy33_20180711/images/project.png&size=auto 60%
 
-## Python2から3へ完全移行中
----?image=stapy33_20180711/images/project.png&size=auto 90%
 ![Moving to require Python 3](http://python3statement.org/)
 
 ---
-## Pytorchで解決できます
-![pytorch](stapy33_20180307/images/pytorch-logo-flat.png)
+
+## 1. pathlib
+os.pathに変わるデフォルトモジュール
+
+    from pathlib import Path
+
+    dataset = 'wiki_images'
+    datasets_root = Path('/path/to/datasets/')
+
+    train_path = datasets_root / dataset / 'train'
+    test_path = datasets_root / dataset / 'test'
+
+    for image_path in train_path.iterdir():
+        with image_path.open() as f: # note, open is a method of Path object
+            # do something with an image
 
 ---
 
