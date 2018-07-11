@@ -162,6 +162,7 @@ CPython3.7+ではdictがOrderedDictのように振る舞う
 - [PEP 0 -- Index of Python Enhancement Proposals (PEPs)](https://www.python.org/dev/peps/)
 - [Python 3 for Scientists](http://python-3-for-scientists.readthedocs.io/en/latest/)
 - [10 awesome features of Python that you can't use because you refuse to upgrade to Python 3](https://www.asmeurer.com/python3-presentation/slides.html#1)
+- [Migrating to Python 3 with pleasure](https://github.com/arogozhnikov/python3_with_pleasure)
 
 ---
 ## EOF
