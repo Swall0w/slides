@@ -9,7 +9,8 @@ Masato Fujitake
 ---
 
 ## Python2から3へ完全移行中
-![project](stapy33_20180711/images/project.png)
+---?image=stapy33_20180711/images/project.png&size=auto 90%
+![Moving to require Python 3](http://python3statement.org/)
 
 ---
 ## Pytorchで解決できます
