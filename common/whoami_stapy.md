@@ -4,8 +4,8 @@
 
 - Twitter: [@Swall0wTech](https://twitter.com/Swall0wTech)
 
-- ロボット系専攻（M1)
+- ロボット系専攻（M2)
 
-- 興味: 画像処理, 機械学習, Python, C++,
+- 興味: 物体検出, OCR, Python, C++,
 
 ![Swall0w](assets/images/swall0w.jpg)
