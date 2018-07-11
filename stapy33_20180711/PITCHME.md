@@ -11,7 +11,7 @@ Masato Fujitake
 
 ## ![Moving to require Python 3](http://python3statement.org/)
 
----?image=stapy33_20180711/images/project.png&size=auto 60%
+---?image=stapy33_20180711/images/project.png&size=auto 80%
 
 ---
 
@@ -53,10 +53,15 @@ glob関係も楽に扱える
 
     # 千単位をアンダースコアで区切る
     >>> one_million = 1_000_000
+    >>> one_million
+    1000000
+    >>> type(one_million)
     <class 'int'>
 
     # 16進数も可能
     >>> addr = 0xCAFE_F00D
+    >>> addr
+    3405705229
     >>> type(addr)
     <class 'int'>
 
@@ -64,19 +69,35 @@ glob関係も楽に扱える
 ## f-strings
 
 format構文がもっと楽に！
+
     # Python 2
     >>> print('{batch:3} accuracy: {acc_mean:0.4f}'.format(
            batch=batch, acc_mean=numpy.mean(accuracies)))
     100 accuracy: 0.8021
 
+
     >>> print('{:3} accuracy: {:0.4f}'.format(
            batch, numpy.mean(accuracies)))
+
 
     # Python 3
     >>> print(f'{batch:3} accuracy: {numpy.mean(accuracies):0.4f}')
 
 
-+++
+---
+## dictがOrderedDictに
+CPython3.7+ではdictがOrderedDictのように振る舞う
+
+    >>> x = {str(i):i for i in range(5)}
+
+    # Python 2
+    >>> x
+    {u'1': 1, u'0': 0, u'3': 3, u'2': 2, u'4': 4}
+
+    # Python 3
+    >>> x
+    {'0': 0, '1': 1, '2': 2, '3': 3, '4': 4}
+
 ### [Tutorial](http://pytorch.org/tutorials/)が強い
 [Fine-Tune](http://pytorch.org/tutorials/beginner/transfer_learning_tutorial.html#sphx-glr-beginner-transfer-learning-tutorial-py)もチュートリアルである
 ![tutorial](stapy33_20180307/images/pytorch_tutorial.png)
