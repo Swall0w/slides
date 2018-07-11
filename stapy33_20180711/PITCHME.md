@@ -1,4 +1,4 @@
-## Python3へ移行しよう
+## Python3で楽しむ小技集
 
 ### Python3で出来る便利機能
 
@@ -15,7 +15,8 @@ Masato Fujitake
 
 ---
 
-## 1. pathlib
+## 1. pathlibが便利
+
 os.pathに変わるデフォルトモジュール
 
     >>> from pathlib import Path
@@ -27,8 +28,8 @@ os.pathに変わるデフォルトモジュール
     >>> test_path = datasets_root / dataset / 'test'
 
     >>> for image_path in train_path.iterdir():
-            with image_path.open() as f: 
-                pass
+    ...     with image_path.open() as f: 
+    ...         pass
 
 +++
 
@@ -37,9 +38,9 @@ glob関係も楽に扱える
     # Python 2
     >>> import glob
     >>> found_images = \
-            glob.glob('/path/*.jpg') \
-          + glob.glob('/path/*/*.jpg') \
-          + glob.glob('/path/*/*/*.jpg')
+    ...     glob.glob('/path/*.jpg') \
+    ...   + glob.glob('/path/*/*.jpg') \
+    ...   + glob.glob('/path/*/*/*.jpg')
 
     # Python 3 with pathlin
     >>> found_images = pathlib.Path('/path/').glob('**/*.jpg')
@@ -49,7 +50,7 @@ glob関係も楽に扱える
 
 ---
 
-## 数字のアンダースコア
+## 2. アンダースコアで見やすく
 
     # 千単位をアンダースコアで区切る
     >>> one_million = 1_000_000
@@ -66,7 +67,7 @@ glob関係も楽に扱える
     <class 'int'>
 
 --- 
-## f-strings
+## 3. f-stringsで綺麗に！
 
 format構文がもっと楽に！
 
@@ -85,7 +86,7 @@ format構文がもっと楽に！
 
 
 ---
-## dictがOrderedDictに
+## 4. 実はdictがOrderedDict
 CPython3.7+ではdictがOrderedDictのように振る舞う
 
     >>> x = {str(i):i for i in range(5)}
@@ -100,7 +101,7 @@ CPython3.7+ではdictがOrderedDictのように振る舞う
 
 ---
 
-## 拡張されたアンパッキング
+## 5. 拡張されたアンパッキング
 アンパッキングでこれが出来る
 
     >>> a, b = range(2)
@@ -133,13 +134,29 @@ CPython3.7+ではdictがOrderedDictのように振る舞う
     >>> rest
     [0, 1, 2, 3, 4, 5, 6, 7, 8]
     >>> b
-9
+    9
++++
+危ないけど使える？使い方
+    >>> with open('this.txt') as f:
+    ...    first, *_, last = f.readlines()
+    # 全部読み込まれるので注意！
+    >>> first
+    'Beautiful is better than ugly.'
+    >>> last
+    'Namespaces are one honking great idea -- let's do more of those!'
+
+
+
 
 ---
-## Pytorch使いやすいです
-ぜひ使ってみてください
+## まとめ
+- 強いpathlib
+- 使えるアンダースコア
+- 簡素なformat構文
+- dictの振る舞い
+- 色々使えるアンパック
 
-`conda install pytorch torchvision -c pytorch`
+ぜひ使ってみてください
 
 ---
 ## EOF
