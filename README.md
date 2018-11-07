@@ -1,4 +1,4 @@
-# Slides for Programing
+# Slides for Programming
 LTや発表資料のまとめ場所（SlideShare等へのリンクも含みます．）
 
 ## Technical Conference
