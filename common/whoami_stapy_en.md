@@ -1,14 +1,13 @@
-## Who Am I
++++?image=assets/images/swall0w.jpg&position=left&size=50%
+@title[Who Am I]
 
+@snap[west split-screen-heading text-orange span-50]
+@snapend
+
+@snap[east text-white span-45]
+@ol[split-screen-list](false)
 - Masato Fujitake
-
 - Twitter: [@Swall0wTech](https://twitter.com/Swall0wTech)
 - Github: [@Swall0w](https://github.com/Swall0w)
-
-- Master Student of Robotics (M2)
-
-- Interests: Machine Learning, OCR, Python, C++, Go, Rust
-
-Got over 300 stars on [torchstat](https://github.com/Swall0w/torchstat):heart_eyes:
-
-![Swall0w](assets/images/swall0w.jpg)
+@olend
+@snapend

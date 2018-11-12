@@ -1,6 +1,6 @@
 @title[torchstat Model Analyzer in PyTorch]
 
-## @color[black](torchstat<br> Model Analyzer in PyTorch)
+## @color[gray](torchstat<br> Model Analyzer in PyTorch)
 
 
 Start Python Club #39 LT
