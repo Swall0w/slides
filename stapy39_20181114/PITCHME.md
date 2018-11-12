@@ -52,13 +52,13 @@ Example of Model
 
 +++
 
-@snap[north]
-I want to know... :worried:
+@snap[west split-screen-heading span-30]
+I want to know...
 @snapend
 
-@snap[west list-content-verbose span-100]
+@snap[east list-content-verbose span-60]
 <br>
-@ul[](false)
+@ul[split-screen-list](false)
 - the befaviour of the model.
     - How will the tensors change
 - the Computation Cost.
@@ -68,11 +68,18 @@ I want to know... :worried:
 @snapend
 
 
----?image=stapy39_20181114/images/torchstat_pypi.jpg&size=auto 100%
+---?image=stapy39_20181114/images/torchstat_pypi.jpg&size=auto 85%
 
 +++
 
-## What can you do with torchstat?
+## What can you know with torchstat?
+@ul[squares]
+
+- Total number of network parameters
+- Theoretical amount of FLOPs and MAdd
+- Memory usage
+
+@ulend
 ---
 
 ## How to Use
@@ -80,7 +87,7 @@ I want to know... :worried:
 - bash
 - python module
 +++
-## As a command line tool
+## As a CLI
 ```bash
 $ torchstat --file main.py --model Net --size 1x28x28
 [MAdd]: Dropout2d is not supported!
@@ -105,8 +112,26 @@ Total MemR+W: 123.18KB
 @[5-11](Details computational cost of networks)
 @[13-18](Summary report of networks)
 
++++
+## As a module
+For more complicated model
+
+```python
+from torchstat import stat
+import torchvision.models as models
+
+model = models.resnet18()
+stat(model, (3, 224, 224))
+```
+
 ---
 ## Example of estimating cost
+If you compute an image of MNIST on the model,
+it takes 487KFlops, 123KB on memory.
+
+When computing on GTX1080Ti, it'll take 0.046[ms], 0.00025[ms] on each step.
+
+So, it'll compute an image in 0.046 micro second.
 
 ---
 ## Future Works
@@ -122,8 +147,7 @@ torchstat is a tool for
 - visualizing your model
 - estimating computational cost of models
     - Total number of network parameters
-    - Theoretical amount of floating point arithmetics (FLOPs)
-    - Theoretical amount of multiply-adds (MAdd)
+    - Theoretical amount of FLOPs and MAdd
     - Memory usage
 
 
