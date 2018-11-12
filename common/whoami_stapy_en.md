@@ -1,5 +1,8 @@
 +++?image=assets/images/swall0w.jpg&position=left&size=35%
 @title[Who Am I]
+@snap[north-west]
+Who Am I
+@snapend
 
 @snap[west split-screen-heading text-orange span-50]
 @snapend
