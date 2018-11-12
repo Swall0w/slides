@@ -46,7 +46,7 @@ Example of Model
 @snapend
 
 @snap[north-east template-note text-gray]
-Please refer to [the example of MNIST](https://github.com/pytorch/examples/blob/master/mnist/main.py).
+[the example of MNIST](https://github.com/pytorch/examples/blob/master/mnist/main.py).
 @snapend
 
 
@@ -70,13 +70,40 @@ I want to know... :worried:
 
 ---?image=stapy39_20181114/images/torchstat_pypi.jpg&size=auto 100%
 
-## What can you do with torchstat?
 +++
+
+## What can you do with torchstat?
+---
 
 ## How to Use
 
-- python module
 - bash
+- python module
++++
+## As a command line tool
+```bash
+$ torchstat --file main.py --model Net --size 1x28x28
+[MAdd]: Dropout2d is not supported!
+[Flops]: Dropout2d is not supported!
+[Memory]: Dropout2d is not supported!
+      module name  input shape output shape   params memory(MB)       MAdd      Flops  MemRead(B)  MemWrite(B) duration[%]  MemR+W(B)
+0           conv1    1  28  28   10  24  24    260.0       0.02  288,000.0  149,760.0      4176.0      23040.0      57.31%    27216.0
+1           conv2   10  12  12   20   8   8   5020.0       0.00  640,000.0  321,280.0     25840.0       5120.0       6.13%    30960.0
+2      conv2_drop   20   8   8   20   8   8      0.0       0.00        0.0        0.0         0.0          0.0       9.10%        0.0
+3             fc1          320           50  16050.0       0.00   31,950.0   16,000.0     65480.0        200.0      27.03%    65680.0
+4             fc2           50           10    510.0       0.00      990.0      500.0      2240.0         40.0       0.43%     2280.0
+total                                        21840.0       0.03  960,940.0  487,540.0      2240.0         40.0     100.00%   126136.0
+=====================================================================================================================================
+Total params: 21,840
+-------------------------------------------------------------------------------------------------------------------------------------
+Total memory: 0.03MB
+Total MAdd: 960.94KMAdd
+Total Flops: 487.54KFlops
+Total MemR+W: 123.18KB
+```
+@[1](Assign module classs and define input size)
+@[5-11](Details computational cost of networks)
+@[13-18](Summary report of networks)
 
 ---
 ## Example of estimating cost
