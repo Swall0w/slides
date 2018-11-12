@@ -9,5 +9,7 @@
 - Masato Fujitake
 - Twitter: [@Swall0wTech](https://twitter.com/Swall0wTech)
 - Github: [@Swall0w](https://github.com/Swall0w)
+- Lang: Python, C++, Go, Rust
+- Interests: CV, ML, DevOps
 @olend
 @snapend
