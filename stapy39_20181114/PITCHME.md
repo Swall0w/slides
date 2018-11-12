@@ -9,8 +9,6 @@
 2018 Nov 14
 Masato Fujitake
 
----
-
 ---?include=common/whoami_stapy_en.md
 
 ---
