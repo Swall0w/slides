@@ -14,10 +14,10 @@ Masato Fujitake
 
 ## @color[white](Deep Learning in PyTorch)
 
-+++
----?image=stapy39_20181114/images/pytorch_home.png&size=auto 80%
++++?image=stapy39_20181114/images/pytorch_home.jpg&size=auto 80%
 
----
++++
+
 
     class Net(nn.Module):
         def __init__(self):
@@ -36,6 +36,7 @@ Masato Fujitake
             x = F.dropout(x, training=self.training)
             x = self.fc2(x)
             return F.log_softmax(x, dim=1)
+
 
 +++
 
