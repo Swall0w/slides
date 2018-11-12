@@ -16,7 +16,8 @@ Masato Fujitake
 
 +++?image=stapy39_20181114/images/pytorch_home.jpg&size=auto 100%
 
-+++
++++?color=lavender
+@title[Model Code Block]
 
 ```python
 class Net(nn.Module):
@@ -40,176 +41,68 @@ class Net(nn.Module):
 @[1-8](Initialization of parameters)
 @[10-17](Foward Computation: How to flow the input)
 
+@snap[north-west]
+Example of Model
+@snapend
+
+@snap[north-east template-note text-gray]
+Please refer to [the example of MNIST](https://github.com/pytorch/examples/blob/master/mnist/main.py).
+@snapend
+
 
 +++
 
 @snap[north]
-Things developers do for modeling
+I want to know... :worried:
 @snapend
 
 @snap[west list-content-verbose span-100]
 <br>
 @ul[](false)
-- Build Neural Networks Architecture.
-- Debug the model.
-- Estimate its Computation Cost.
-- Check the befaviour of the model.
+- the befaviour of the model.
+    - How will the tensors change
+- the Computation Cost.
+    - FLOPs (FLoating-point Operations Per Second)
+    - Amount of memory read and write
 @ulend
 @snapend
 
+
+---?image=stapy39_20181114/images/torchstat_pypi.jpg&size=auto 100%
+
+## What can you do with torchstat?
 +++
 
-@snap[north]
-Things developers do for modeling
-@snapend
+## How to Use
 
-## 1. pathlibが便利
-
-os.pathに変わるデフォルトモジュール
-
-    >>> from pathlib import Path
-
-    >>> dataset = 'images'
-    >>> datasets_root = Path('/path/to/datasets/')
-
-    >>> train_path = datasets_root / dataset / 'train'
-    >>> test_path = datasets_root / dataset / 'test'
-
-    >>> for image_path in train_path.iterdir():
-    ...     with image_path.open() as f: 
-    ...         pass
-
-+++
-
-glob関係も楽に扱える
-
-    # Python 2
-    >>> import glob
-    >>> found_images = \
-    ...     glob.glob('/path/*.jpg') \
-    ...   + glob.glob('/path/*/*.jpg') \
-    ...   + glob.glob('/path/*/*/*.jpg')
-
-    # Python 3 with pathlin
-    >>> found_images = pathlib.Path('/path/').glob('**/*.jpg')
-
-    # Python 3
-    >>> found_images = glob.glob('/path/**/*.jpg', recursive=True)
+- python module
+- bash
 
 ---
-
-## 2. アンダースコアで見やすく
-
-    # 千単位をアンダースコアで区切る
-    >>> one_million = 1_000_000
-    >>> one_million
-    1000000
-    >>> type(one_million)
-    <class 'int'>
-
-    # 16進数も可能
-    >>> addr = 0xCAFE_F00D
-    >>> addr
-    3405705229
-    >>> type(addr)
-    <class 'int'>
-
---- 
-## 3. f-stringsで綺麗に！
-
-format構文がもっと楽に！
-
-    # Python 2
-    >>> print('{batch:3} accuracy: {acc_mean:0.4f}'.format(
-    ...    batch=batch, acc_mean=numpy.mean(accuracies)))
-    100 accuracy: 0.8021
-
-
-    >>> print('{:3} accuracy: {:0.4f}'.format(
-    ...    batch, numpy.mean(accuracies)))
-
-
-    # Python 3
-    >>> print(f'{batch:3} accuracy: {numpy.mean(accuracies):0.4f}')
-
+## Example of estimating cost
 
 ---
-## 4. 実はdictがOrderedDict
-CPython3.7+ではdictがOrderedDictのように振る舞う
-
-    >>> x = {str(i):i for i in range(5)}
-
-    # Python 2
-    >>> x
-    {u'1': 1, u'0': 0, u'3': 3, u'2': 2, u'4': 4}
-
-    # Python 3
-    >>> x
-    {'0': 0, '1': 1, '2': 2, '3': 3, '4': 4}
+## Future Works
+- UI(detail, layer-wise)
+- Export result table
+- Arbitrary input shape
+- GPU time
 
 ---
+## Conclusion
 
-## 5. 拡張されたアンパッキング
-アンパッキングでこれが出来る
-
-    >>> a, b = range(2)
-    >>> a
-    0
-    >>> b
-    1
-
-    >>> a, b, *rest = range(10)
-    >>> a
-    0
-    >>> b
-    1
-    >>> rest
-    [2, 3, 4, 5, 6, 7, 8, 9]
-
-+++
-
-ちなみに*restはどこにでもおける
-
-    >>> a, *rest, b = range(10)
-    >>> a
-    0
-    >>> b
-    9
-    >>> rest
-    [1, 2, 3, 4, 5, 6, 7, 8]
-
-    >>> *rest, b = range(10)
-    >>> rest
-    [0, 1, 2, 3, 4, 5, 6, 7, 8]
-    >>> b
-    9
-+++
-危ないけど使える？使い方
-    >>> with open('this.txt') as f:
-    ...    first, *_, last = f.readlines()
-    # 全部読み込まれるので注意！
-    >>> first
-    'Beautiful is better than ugly.'
-    >>> last
-    "Namespaces are one honking great idea -- let's do more of those!"
-
----
-## まとめ
-- 強いpathlib
-- 使えるアンダースコア
-- 簡素なformat構文
-- dictの振る舞い
-- 色々使えるアンパック
+torchstat is a tool for
+- visualizing your model
+- estimating computational cost of models
+    - Total number of network parameters
+    - Theoretical amount of floating point arithmetics (FLOPs)
+    - Theoretical amount of multiply-adds (MAdd)
+    - Memory usage
 
 
-ぜひ使ってみてください
+Its is available on PyPI and new features will be available soon.
 
----
-## References
-- [PEP 0 -- Index of Python Enhancement Proposals (PEPs)](https://www.python.org/dev/peps/)
-- [Python 3 for Scientists](http://python-3-for-scientists.readthedocs.io/en/latest/)
-- [10 awesome features of Python that you can't use because you refuse to upgrade to Python 3](https://www.asmeurer.com/python3-presentation/slides.html#1)
-- [Migrating to Python 3 with pleasure](https://github.com/arogozhnikov/python3_with_pleasure)
+I hope you enjoy debugging your model:laughing:
 
 ---
 ## EOF
