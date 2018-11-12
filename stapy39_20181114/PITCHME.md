@@ -53,10 +53,10 @@ Example of Model
 +++
 
 @snap[west split-screen-heading span-30]
-I want to know...
+I want<br>to know
 @snapend
 
-@snap[east list-content-verbose span-60]
+@snap[east span-60]
 <br>
 @ul[split-screen-list](false)
 - the befaviour of the model.
@@ -129,9 +129,13 @@ stat(model, (3, 224, 224))
 If you compute an image of MNIST on the model,
 it takes 487KFlops, 123KB on memory.
 
-When computing on GTX1080Ti, it'll take 0.046[ms], 0.00025[ms] on each step.
+When computing on GTX1080Ti, it'll take 0.046[ms], 0.00025[ms] on each step. #1
 
 So, it'll compute an image in 0.046 micro second.
+
+@snap[south span-100]
+@size[0.5em](1. GTX 1080Ti has computational ability of 10.6TFLOPs on FP32, data-transfer rate of 484GB/s!)
+@snapend
 
 ---
 ## Future Works
