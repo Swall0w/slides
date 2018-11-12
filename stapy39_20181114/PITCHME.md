@@ -3,22 +3,35 @@
 ## @color[gray](torchstat<br> Model Analyzer in PyTorch)
 
 
-Start Python Club #39 LT
+[Start Python Club #39](https://startpython.connpass.com/event/101476/) LT
 
 
 2018 Nov 14
 Masato Fujitake
 
+---
+
 ---?include=common/whoami_stapy_en.md
 
 ---
 
-## ![Moving to require Python 3](http://python3statement.org/)
-Python2のサポートがどんどん切られていく
-
----?image=stapy33_20180711/images/project.png&size=auto 80%
+## @color[white](Deep Learning in PyTorch)
 
 ---
+
+@snap[north]
+Things developers do for modeling
+@snapend
+
+@snap[west list-content-verbose span-100]
+<br>
+@ul[](false)
+- Build Neural Networks Architecture.
+- Debug the model.
+- Estimate its Computation Cost.
+- Check the befaviour of the model.
+@ulend
+@snapend
 
 ## 1. pathlibが便利
 
