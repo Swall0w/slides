@@ -50,7 +50,7 @@ Example of Model
 @snapend
 
 
-+++?image=assets/images/bg/green.jpg&position=right&size=30% 100%
++++?image=assets/images/bg/green.jpg&position=left&size=30% 100%
 
 @snap[west split-screen-heading span-30 text-white]
 I want<br>to know
