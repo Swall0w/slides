@@ -62,7 +62,7 @@ I want<br>to know
 - the befaviour of the model.
     - How will the tensors change
 - the Computation Cost.
-    - FLOPs (FLoating-point Operations Per Second)
+    - FLOPs
     - Amount of memory read and write
 @ulend
 @snapend
@@ -125,7 +125,10 @@ stat(model, (3, 224, 224))
 ```
 
 ---
-## Example of estimating cost
+@snap[north-west]
+Example
+@snapend
+
 If you compute an image of MNIST on the model,
 it takes 487KFlops, 123KB on memory.
 
@@ -133,7 +136,7 @@ When computing on GTX1080Ti, it'll take 0.046[ms], 0.00025[ms] on each step. #1
 
 So, it'll compute an image in 0.046 micro second.
 
-@snap[south span-100]
+@snap[south-west span-100]
 @size[0.5em](1. GTX 1080Ti has computational ability of 10.6TFLOPs on FP32, data-transfer rate of 484GB/s!)
 @snapend
 
