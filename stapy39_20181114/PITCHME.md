@@ -52,7 +52,7 @@ Example of Model
 
 +++?image=assets/images/bg/white.jpg&position=left&size=25% 100%
 
-@snap[west split-screen-heading span-30 text-white]
+@snap[west split-screen-heading span-30 text-black]
 I want<br>to know
 @snapend
 
