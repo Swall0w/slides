@@ -155,7 +155,7 @@ So, total time is about 0.046 micro second.
 ---
 ## Conclusion
 
-torchstat is a tool for
+[torchstat](https://github.com/Swall0w/torchstat) is a tool for
 
 - visualizing your model
 - estimating computational cost
@@ -166,8 +166,29 @@ torchstat is a tool for
 Its is available on PyPI
 
 ```bash
-$pip install torchstat
+$ pip install torchstat
 ```
 
 ---
 ## EOF
+
+---
+## 公開してから
+### Github star
+
+@ul[squares]
+
+- 1日目：  3
+- 2日目： 15
+- 3日目：170
+- 今：   338
+
+@ulend
+
+### Findy score
+@ul[squares]
+
+- Before: 62
+- After: 86 (+24)
+
+@ulend
