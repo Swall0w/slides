@@ -129,16 +129,12 @@ stat(model, (3, 224, 224))
 Example
 @snapend
 
-@snap[center-left]
-If you compute an image of MNIST on the model, it takes
-@snapend
+Computing an image of MNIST on the model takes
 
 - 487KFlops
 - 123KB on memory.
 
-@snap[center-left]
 On GTX1080Ti (#1), it'll take
-@snapend
 
 - 0.046[ms] in foward computing.
 - 0.00025[ms] in memory read and write.
@@ -159,9 +155,7 @@ So, total time is about 0.046 micro second.
 ---
 ## Conclusion
 
-@snap[center-left]
 torchstat is a tool for
-@snapend
 
 - visualizing your model
 - estimating computational cost
