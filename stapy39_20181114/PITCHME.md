@@ -129,12 +129,17 @@ stat(model, (3, 224, 224))
 Example
 @snapend
 
-If you compute an image of MNIST on the model,
-it takes 487KFlops, 123KB on memory.
+If you compute an image of MNIST on the model, it takes
 
-When computing on GTX1080Ti, it'll take 0.046[ms], 0.00025[ms] on each step. #1
+- 487KFlops
+- 123KB on memory.
 
-So, it'll compute an image in 0.046 micro second.
+On GTX1080Ti (#1), it'll take
+
+- 0.046[ms] in foward computing.
+- 0.00025[ms] in memory read and write.
+
+So, total time is about 0.046 micro second.
 
 @snap[south-west span-100]
 @size[0.5em](1. GTX 1080Ti has computational ability of 10.6TFLOPs on FP32, data-transfer rate of 484GB/s!)
@@ -152,15 +157,16 @@ So, it'll compute an image in 0.046 micro second.
 
 torchstat is a tool for
 - visualizing your model
-- estimating computational cost of models
-    - Total number of network parameters
-    - Theoretical amount of FLOPs and MAdd
+- estimating computational cost
+    - network parameters
+    - FLOPs and MAdd
     - Memory usage
 
+Its is available on PyPI
 
-Its is available on PyPI and new features will be available soon.
-
-I hope you enjoy debugging your model:laughing:
+```bash
+$pip install torchstat
+```
 
 ---
 ## EOF
