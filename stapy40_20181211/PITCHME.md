@@ -10,10 +10,13 @@ Masato Fujitake
 
 ---?include=common/whoami_stapy_en.md
 
----
-
 +++?color=lavender
 @title[list]
+
+@snap[north-west]
+一覧
+@snapend
+
 @snap[east span-90]
 <br>
 @ul[split-screen-list](false)
@@ -28,9 +31,21 @@ Masato Fujitake
 @ulend
 @snapend
 
-
++++?image=stapy40_20181211/images/cleanarchitecture.png&position=left&size=35%
+@title[Clean Architecture]
 @snap[north-west]
-一覧
+Clean Architecture 達人に学ぶソフトウェアの構造と設計
+@snapend
+
+@snap[west split-screen-heading text-orange span-50]
+@snapend
+
+@snap[east text-white span-60]
+@ul[split-screen-list](false)
+- アーキテクチャをクリーンに保つことの重要性の説明
+- パラダイム，原理などの概念を解説
+- 「ソフトウェアはソフトでなければいけない。つまり、簡単に変更できなければいけない。」
+@ulend
 @snapend
 
 +++?image=assets/images/bg/white.jpg&position=left&size=25% 100%
