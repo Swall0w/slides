@@ -38,7 +38,7 @@ Clean Architecture 達人に学ぶソフトウェアの構造と設計
 @snap[west split-screen-heading text-orange span-50]
 @snapend
 
-@snap[east text-white span-60]
+@snap[east text-white span-70]
 @ul[split-screen-list](false)
 - アーキテクチャをクリーンに保つことの重要性の説明
 - パラダイム，原理などの概念を解説
@@ -55,7 +55,7 @@ Clean Architecture 達人に学ぶソフトウェアの構造と設計
 @snap[west split-screen-heading text-orange span-50]
 @snapend
 
-@snap[east text-white span-60]
+@snap[east text-white span-70]
 @ul[split-screen-list](false)
 - コードレビューを解説
 - 筆者の意図を読み解く本
@@ -72,7 +72,7 @@ Clean Architecture 達人に学ぶソフトウェアの構造と設計
 @snap[west split-screen-heading text-orange span-50]
 @snapend
 
-@snap[east text-white span-60]
+@snap[east text-white span-70]
 @ul[split-screen-list](false)
 - スタートアップに必要な要点をまとめた本
 - 背景にある仕組みやアイディアが分かりやすく解説
