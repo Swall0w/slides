@@ -21,13 +21,15 @@ Masato Fujitake
 <br>
 @ul[split-screen-list](false)
     - Clean Architecture 達人に学ぶソフトウェアの構造と設計
+
     - 俺のコードのどこが悪い？コードレビューを攻略する４０のルール
+
     - 逆説のスタートアップ思考
 @ulend
 @snapend
 
 
----?image=stapy40_20181211/images/cleanarchitecture.png&position=left&size=35%
+---?image=stapy40_20181211/images/cleanarchitecture.png&position=left&size=30%
 @title[Clean Architecture]
 @snap[north-west]
 Clean Architecture 達人に学ぶソフトウェアの構造と設計
@@ -44,7 +46,7 @@ Clean Architecture 達人に学ぶソフトウェアの構造と設計
 @ulend
 @snapend
 
----?image=stapy40_20181211/images/orenocode.png&position=left&size=35%
+---?image=stapy40_20181211/images/orenocode.png&position=left&size=30%
 @title[Ore no code]
 @snap[north-west]
 俺のコードのどこが悪い？コードレビューを攻略する４０のルール
@@ -61,7 +63,7 @@ Clean Architecture 達人に学ぶソフトウェアの構造と設計
 @ulend
 @snapend
 
----?image=stapy40_20181211/images/startup.png&position=left&size=35%
+---?image=stapy40_20181211/images/startup.png&position=left&size=30%
 @title[Start Up]
 @snap[north-west]
 逆説のスタートアップ思考
@@ -74,6 +76,6 @@ Clean Architecture 達人に学ぶソフトウェアの構造と設計
 @ul[split-screen-list](false)
 - スタートアップに必要な要点をまとめた本
 - 背景にある仕組みやアイディアが分かりやすく解説
-- [逆説のキャリア思考が面白い](https://www.slideshare.net/takaumada/paradoxical-startup-career-thinking)
+- [逆説のキャリア思考](https://www.slideshare.net/takaumada/paradoxical-startup-career-thinking)が面白い
 @ulend
 @snapend
