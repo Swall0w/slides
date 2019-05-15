@@ -16,7 +16,7 @@ Masato Fujitake
 @snap[east span-90]
     スムーズに機械学習レポジトリを作りたい...!
 @snapend
-
+---
 
 @title[やっかいなもの]
 @ul[split-screen-list](false)
@@ -26,6 +26,7 @@ Masato Fujitake
 - ドキュメント
 - 型
 @ulend
+---
 
 @snap[east text-white span-70]
 @ul[split-screen-list](false)
